@@ -1,0 +1,4 @@
+*.log
+backend/.env
+backend/sslcert
+backend/node_modules

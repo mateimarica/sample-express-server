@@ -1,0 +1,17 @@
+#dogPic {
+	width: 100px;
+}
+
+#dynamicImage {
+	width: 800px;
+	border-radius: 8px;
+	border: 3px solid black;
+}
+
+h1 {
+	color: darkslateblue;
+}
+
+h3 {
+	color: green;
+}
