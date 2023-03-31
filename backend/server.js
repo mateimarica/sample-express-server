@@ -10,32 +10,11 @@ const express = require('express'),
       https = require('https'),
       fs = require('fs'),
       helmet = require("helmet"),
-      compression = require('compression'),
-      morgan = require('morgan');
+      compression = require('compression');
 
 const app = express(); // Create the express app
 
 
-
-
-//--------------------------------------//
-//               LOGGING                //
-//--------------------------------------//
-const skipNonErrorsFunc = function (req, res) { return res.statusCode < 400 } // Function so we only log errors
-if (process.env.NODE_ENV === 'development') { // If the environment is dev, set dev logger level (prints to console)
-	app.use(morgan('dev', {
-		skip: skipNonErrorsFunc
-	}));
-} else { // Otherwise, set up production-level logs
-	const accessLogStream = rfs.createStream('access.log', { // File stream for a file named "access.log"
-		interval: '1d', // Create a new log file daily
-		path: path.join(__dirname, 'logs') // Put the logs in a directory called 'logs'
-	});
-	app.use(morgan('common', {
-		stream: accessLogStream,
-		skip: skipNonErrorsFunc
-	}));
-}
 
 
 
