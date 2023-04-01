@@ -53,5 +53,10 @@ Requires node.js to be installed
 
 	This will open up the server in its own screen.
 	- To leave (detach) the screen, do `Ctrl+A` then `Ctrl+D`
-	- To kill the screen (and the server), do `Ctrl+C`
+	- To kill the screen, do `Ctrl+C` to kill the server then type `exit` to terminate the screen.
 	- To resume the screen, do `screen -r myserver`. The screen name can be changed in package.json
+	- To check for if any screens are running, do `screen -ls`
+	   - If a screen says `attached` you're in that screen
+	   - If a screen says `detached`, you're *not* in that screen
+
+<br>
