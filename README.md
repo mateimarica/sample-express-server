@@ -12,9 +12,9 @@ Requires node.js to be installed
 	npm install
 	```
 
-3. Copy `template.env` to create an actual `.env`
+3. Run the `init` script to create a `.env` file using the `template.env`.
 	```shell
-	node -e "require('fs').copyFile('template.env', '.env', ()=>{});"
+	npm run init
 	```
 
 <br>
