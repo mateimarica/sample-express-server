@@ -1,6 +1,7 @@
-Requires node.js to be installed
+## Prerequisites
+- Requires Node.js to be installed - the current LTS version or newer should work.
 
-<br>
+## Setup
 
 1. Clone the repo:
 	```shell
